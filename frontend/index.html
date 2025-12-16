@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConsoleChacha</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="bot-identity">
+          <div class="avatar-small">
+             <img src="chatbot.png" alt="Bot Avatar" />
+          </div>
+          <span class="bot-name">ConsoleChacha</span>
+        </div>
+        <div class="header-actions">
+           <button class="icon-btn">⋮</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chat messages container -->
+    <main class="chat-container" id="chat-container">
+      
+     
+
+    
+
+
+    </main>
+
+    <!-- Input area -->
+    <footer class="input-area">
+      <div class="input-wrapper">
+        <input
+          type="text"
+          class="chat-input"
+          id="chat-input"
+          placeholder="Type your message..."
+        />
+        <button class="attach-btn">📎</button>
+        <button class="send-btn" id="send-btn">
+           Send 
+        </button>
+      </div>
+      <div class="disclaimer">
+        ConsoleChacha can make mistakes. Consider checking important information.
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
