@@ -5,6 +5,14 @@ const sendBtn = document.getElementById('send-btn');
 
 const WORKER_URL = "https://flat-night-0a40.krayush1099.workers.dev/";
 
+// 🔹 Create / reuse sessionId for per-user history
+let sessionId = localStorage.getItem("consolechacha_session");
+
+if (!sessionId) {
+  sessionId = crypto.randomUUID();
+  localStorage.setItem("consolechacha_session", sessionId);
+}
+
 
 function getCurrentTime() {
     const now = new Date();
@@ -43,8 +51,10 @@ async function getGroqResponse(userMessage) {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      message: userMessage
-    })
+  message: userMessage,
+  sessionId // 🔹 send session id for history tracking
+})
+
   });
 
   if (!response.ok) {
