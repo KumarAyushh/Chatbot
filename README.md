@@ -53,45 +53,17 @@ Backend (Cloudflare Worker):
 ---
 
 ## 📁 Project Structure
+consolechacha/
+├── frontend/
+│ ├── index.html
+│ ├── style.css
+│ ├── app.js
+│ ├── user.png
+│ └── chatbot.png
+│
+├── README.md
+└── .gitignore
 
-
-- The frontend communicates **only with the Worker**
-- The Worker handles:
-  - Prompt control
-  - API authentication
-  - Rate limiting
-  - CORS
-  - Response sanitization
-
----
-
-## 📁 Project Structure
-
-
-- The frontend communicates **only with the Worker**
-- The Worker handles:
-  - Prompt control
-  - API authentication
-  - Rate limiting
-  - CORS
-  - Response sanitization
-
----
-
-## 📁 Project Structure
-
-
-- The frontend communicates **only with the Worker**
-- The Worker handles:
-  - Prompt control
-  - API authentication
-  - Rate limiting
-  - CORS
-  - Response sanitization
-
----
-
-## 📁 Project Structure
 
 - The frontend communicates **only with the Worker**
 - The Worker handles:
